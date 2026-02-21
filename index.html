@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria do bairro</title>
+    <!-- Ligação do HTML com o CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icone da Aba do site -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Importação do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Fonte Lobster Two -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- =================== CABEÇALHO ===================-->
+    <header>
+        <div class="marca-e-nav">
+
+            <div class="marca">
+                <h1>Padaria do Bairro</h1>
+                <p><em>Seu momento de pausa no dia</em></p>
+            </div>
+
+            <div class="logo">
+                <img src="./image/logo-sem-cor.png" alt="Logo Padaria do Bairro">
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./pedidos.html">Pedidos</a></li>
+                    <li><a href="./feedback.html">Feedback</a></li>
+                    <li><a href="./cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="img-header"></div>
+    </header>
+
+    <!-- =================== PRINCIPAL =================== -->
+    <main>
+        <section class="sobre-nos">
+            <h2>Sobre nós</h2>
+            <p>
+                A Padaria do Bairro nasceu com a ideia de ser mais do que um lugar para comprar pão.
+                Nosso espaço foi pensado para receber pessoas, criar momentos e fazer parte da rotina
+                de quem passa por aqui todos os dias.
+            </p>
+
+            <p>
+                Trabalhamos com pães, doces e salgados preparados diariamente, sempre com atenção aos
+                ingredientes, ao preparo e ao cuidado em cada detalhe. Valorizamos receitas simples,
+                bem feitas e com sabor de casa.
+            </p>
+
+            <p>
+                Aqui, acreditamos que um bom café, um pão quentinho e um ambiente agradável fazem
+                diferença no dia. Por isso, buscamos oferecer não só produtos de qualidade, mas
+                também um lugar acolhedor para sentar, conversar e aproveitar o momento.
+            </p>
+        </section>
+
+        <!-- =================== Galeria 1 =================== -->
+        <section class="galeria">
+            <h2>Galeria</h2>
+            <div class="galeria1">
+                <img src="./image/galeria1/1.png" alt="Produto da padaria 1" />
+                <img src="./image/galeria1/2.png" alt="Produto da padaria 2" />
+                <img src="./image/galeria1/10.png" alt="Produto da padaria 3" />
+                <img src="./image/galeria1/4.png" alt="Produto da padaria 4" />
+            </div>
+        </section>
+
+        <!-- =================== NOSSOS PRODUTOS =================== -->
+        <!-- seção inteira com h2, ul e li -->
+        <section class="produtos">
+            <h2>Nossos Produtos</h2>
+
+            <!-- o grid é sempre aplicado no pai para controlar as li -->
+            <ul class="produtos-grid">
+
+                <!-- cada li é um card -->
+                <li class="card">
+                    <span class="icone"><img src="./image/produtos/1 pão.png" alt="Ícone de pães"></span>
+                    <p>Pães</p>
+                </li>
+
+                <li class="card">
+                    <span class="icone"><img src="./image/produtos/2 bolo.png" alt="Ícone de bolos"></span>
+                    <p>Bolos</p>
+                </li>
+
+                <li class="card">
+                    <span class="icone"><img src="./image/produtos/3 folhados.png" alt="Ícone de folhados"></span>
+                    <p>Folhados</p>
+                </li>
+
+                <li class="card">
+                    <span class="icone"><img src="./image/produtos/4 doces.png" alt="Ícone de doces"></span>
+                    <p>Doces</p>
+                </li>
+
+                <li class="card">
+                    <span class="icone"><img src="./image/produtos/5 salgados.png" alt="Ícone de salgados"></span>
+                    <p>Salgados</p>
+                </li>
+
+                <li class="card">
+                    <span class="icone"><img src="./image/produtos/6 bebidas.png" alt="Ícone de bebidas"></span>
+                    <p>Bebidas</p>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- =================== DIFERENCIAIS =================== -->
+        <section class="diferenciais">
+            <h2>Diferenciais</h2>
+            <ul>
+                <li>Produção diária para garantir produtos sempre frescos</li>
+                <li>Ingredientes selecionados desde a escolha até o preparo</li>
+                <li>Variedade de pães, doces e salgados</li>
+                <li>Atendimento presencial, por telefone e online</li>
+            </ul>
+        </section>
+
+        <!-- =================== VIDEO =================== -->
+        <!-- adicionei um texto de fallback do video q o gpt me ensinou e achei mto interessante  -->
+        <section>
+            <video controls>
+                <source src="./videos/padaria.mp4" type="video/mp4" />
+                Seu navegador não suporta vídeo.
+            </video>
+        </section>
+
+        <!-- =================== CARDAPIO =================== -->
+        <section class="cardapio">
+            <h2>Cardápio</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Produto</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+
+                <!-- PÃES -->
+                <tbody>
+                    <tr>
+                        <td>Pães</td>
+                        <td>Pão Francês</td>
+                        <td>Crocante por fora e macio por dentro</td>
+                        <td>R$ 0,80</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pães</td>
+                        <td>Pão de Leite</td>
+                        <td>Massa macia e levemente adocicada</td>
+                        <td>R$ 1,20</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pães</td>
+                        <td>Pão integral</td>
+                        <td>Produzido com farinha integral</td>
+                        <td>R$ 1,50</td>
+                    </tr>
+
+                    <!-- DOCES -->
+                    <tr>
+                        <td>Doces</td>
+                        <td>Bolo de Chocolate</td>
+                        <td>Bolo fofinho com cobertura de chocolate</td>
+                        <td>R$ 6,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Doces</td>
+                        <td>Sonho Recheado</td>
+                        <td>Recheio de creme ou doce de leite</td>
+                        <td>R$ 4,50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Doces</td>
+                        <td>Pão Doce</td>
+                        <td>Massa com cobertura de creme e coco</td>
+                        <td>R$ 4,00</td>
+                    </tr>
+
+                    <!-- SALGADOS -->
+                    <tr>
+                        <td>Salgados</td>
+                        <td>Coxinha</td>
+                        <td>Frango temperado com massa crocante</td>
+                        <td>R$ 6,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Salgados</td>
+                        <td>Pão de Queijo</td>
+                        <td>Tradicional, assado na hora</td>
+                        <td>R$ 3,50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Salgados</td>
+                        <td>Empada de Frango</td>
+                        <td>Massa leve com recheio cremoso</td>
+                        <td>R$6,50</td>
+                    </tr>
+
+                    <!-- BEBIDAS -->
+                    <tr>
+                        <td>Bebidas</td>
+                        <td>Café Preto</td>
+                        <td>Café forte, passado na hora</td>
+                        <td>R$ 3,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bebidas</td>
+                        <td>Café com Leite</td>
+                        <td>Clássico café com leite</td>
+                        <td>R$ 4,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bebidas</td>
+                        <td>Suco Natural</td>
+                        <td>Sabores Variados</td>
+                        <td>R$ 5,50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- =================== GALERIA 2 =================== -->
+        <section class="imagens-interior">
+            <img src="./image/paoavif.avif" alt="Pães franceses em um cesto" />
+            <img src="./image/bolodechocolatejpeg.jpg" alt="Bolo de chocolate com uma fatia cortada" />
+            <img src="./image/croissantjpeg.jpg" alt="Croissants dentro de um cesto" />
+            <img src="./image/salgadosjpg.jpg" alt="Salgados variados" />
+        </section>
+
+        <!-- =================== HORARIO DE FUNCIONAMENTO =================== -->
+        <section>
+            <h2>Horário de Funcionamento</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Segunda a Sexta</td>
+                        <td>06h às 19h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sábado</td>
+                        <td>06h às 18h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Domingo</td>
+                        <td>07h às 12h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- ============== BOTÃO ============== -->
+    <section>
+        <button class="botao-whats"><img src="./image/whatsapp.png" alt="Fale conosco pelo WhatsApp"></button>
+        <button class="botao-topo"><img src="./image/up-arrow.png" alt="Voltar ao topo"></button>
+    </section>
+
+    <!-- =================== FOOTER =================== -->
+    <footer>
+        <h2>Localização</h2>
+        <p>
+            Rua Nossa Senhora de FATma, nº 123 – Centro<br>
+            Jardim Qualifica<br>
+            São Paulo - SP
+        </p>
+
+        <p>Padaria do Bairro © 2026</p>
+        <p>Telefone: (11) 91234-5678</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Define a codificação UTF-8 para suportar acentos e emojis corretamente -->
+    <meta charset="UTF-8">
+    <!-- Garante que o site se adapte bem a celulares e tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Padaria do Bairro</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho da página com título principal e menu de navegação -->
+    <header>
+        <!-- h1 é o título mais importante da página (só um por página) -->
+        <h1>Feedback - Padaria do Bairro</h1>
+
+        <!-- Navegação principal: links para outras páginas do site -->
+        <nav>
+            <a href="./index.html">Início</a>
+            <a href="./contato.html">Contato</a>
+            <a href="./pedidos.html">Pedidos</a>
+            <a href="./feedback.html">Feedback</a>
+            <a href="./cadastro.html">Cadastro</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Formulário de feedback - action vazia envia para a mesma página (bom para testes) -->
+         <form action="" method="">
+
+            <!-- Agrupa toda a área do formulário em uma seção -->
+            <section>
+                <!-- Título da primeira parte do formulário -->
+                <h2>Fale conosco</h2>
+
+                <!-- Agrupa campos relacionados (identificação do usuário) -->
+                <fieldset>
+                    <!-- Título do grupo (anunciado por leitores de tela) -->
+                    <legend>Identificação</legend>
+                    
+                    <!-- Cada label está ligada ao input pelo "for" + "id" -->
+                    <label for="nome">👤 Nome Completo:</label><br>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br>
+
+                    <label for="email">📧 Email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com"><br>
+
+                    <!-- Select com opção inicial vazia (value="") para forçar a escolha -->
+                    <label for="produto_ou_servico">🍞 Produto/Serviço:</label><br>
+                    <select name="produto_ou_servico" id="produto_ou_servico" required>
+                        <!-- value="" + disabled + selected: opção padrão que não pode ser enviada -->
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="paes_tradicionais">🥖 Pães tradicionais</option>
+                        <option value="doces_e_bolos">🍰 Doces e bolos</option>
+                        <option value="salgados">🥐 Salgados</option>
+                        <option value="atendimento">👥 Atendimento</option>
+                        <option value="ambiente">🏠 Ambiente</option>
+                        <option value="precos">💲 Preços</option>
+                    </select>
+                </fieldset>
+
+                <!-- Segunda parte: avaliação -->
+                <h2>Avalie sua experiência</h2>
+                <fieldset>
+                    <legend>Avaliação Geral</legend>
+
+                    <!-- Grupo de radios: name igual para que só um possa ser selecionado -->
+                    <!-- required só no primeiro: torna o grupo inteiro obrigatório -->
+                    <label>
+                        <input type="radio" name="avaliacao_geral" value="excelente" required> 🌟 Excelente
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="avaliacao_geral" value="bom"> 👍 Bom
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="avaliacao_geral" value="regular"> 😐 Regular
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="avaliacao_geral" value="ruim"> 👎 Ruim
+                    </label><br><br>
+
+                    <!-- Textarea para comentários longos -->
+                    <!-- minlength="10" => Mínimo 10 caracteres para evitar comentários vazios -->
+                    <!-- rows="5" => Altura inicial da caixa de texto -->
+                    <label for="comentario">✍️ Comentário:</label><br>
+                    <textarea 
+                        name="comentario"
+                        id="comentario"
+                        required
+                        minlength="10"
+                        rows="5"
+                        placeholder="Nos ajude a melhorar!"
+                    ></textarea><br><br>
+                   
+                    <!-- Checkboxes: permitem múltiplas seleções (ou nenhuma) -->
+                    <!-- name diferente de tudo para não conflitar -->
+                    <!-- value="sim": padrão comum - quando marcado, envia "sim". Achei mto interessante! -->
+                     <label>
+                        <input type="checkbox" name="recomendaria_amigos" value="sim">
+                        👍 Recomendaria a Padaria do Bairro para amigos e familiares?
+                    </label><br><br>
+
+                    <label>
+                        <input type="checkbox" name="autoriza_publicacao" value="sim">
+                        📰 Autorizo a publicação do meu depoimento (nome e comentário) no site/redes sociais da padaria
+                    </label><br><br>
+
+                    <!-- Botão de envio do formulário -->
+                    <!-- type="submit" é obrigatório para enviar os dados -->
+                    <button type="submit">Enviar Feedback</button>
+
+                </fieldset>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>

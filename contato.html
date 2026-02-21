@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <!-- Define o título que aparece na aba/navegador -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- cabeçalho da página  -->
+        <h1>Contato Padaria do Bairro</h1>
+        <!-- Titulo principal da página -->
+        <nav>
+            <p>
+                <!-- Navegação principal – usando <p> para manter os links na horizontal por enquanto (sem CSS ainda).
+                Futuramente: transformar em <ul> sem bolinhas + display: flex ou inline para ficar bonito e semântico -->
+                <!-- barra de navegação para outras páginas do site -->
+                <a href="./index.html">Início</a>
+                <a href="./contato.html">Contato</a>
+                <a href="./pedidos.html">Pedidos</a>
+                <a href="./feedback.html">Feedback</a>
+                <a href="./cadastro.html">Cadastro</a>
+            </p>
+        </nav>
+    </header>
+
+    <main>
+        <!-- conteudo principal da pagina de contato -->
+        <form>
+            <!-- criação do formulário -->
+            <label for="nome">Nome Completo:</label><br>
+            <!-- rotulo com texto indicando o que deve ser colocado no campo do input do formulário. for="nome" faz a ligação do id="nome" do input com a label -->
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br>
+            <!-- o name="nome" é usado pro backend poder identificar o tipo de dado que o usuario inseriu -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required placeholder="seuemail@google.com"><br>
+            <!-- required é um campo obrigatório ao usuario e placeholder é a palavra ou frase que aparece dentro do campo do input -->
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" pattern="\(?[0-9]{2}\)? ?[0-9]{4,5}-?[0-9]{4}"
+                placeholder="(xx) xxxxx-xxxx" title="Formato: (xx) xxxxx-xxxx ou (xx) xxxx-xxxx"><br>
+            <!-- pattern é uma regra de formato para o input. O formulário só sera enviado se o texto digitado pelo usuário seguir o padrão definido, seja ele CPF, telefone, CEP, Apenas números, Apenas letras, Quantidade fixa de caracteres etc -->
+            <label for="assunto">Assunto:</label><br>
+            <select id="assunto" name="assunto" required>
+                <option value="" disabled selected>Selecione o assunto</option>
+                <!-- value="": impede envio se não escolher nada (combinado com required).
+                disabled selected: deixa selecionado por padrão, mas não pode ser reenviado. -->
+                <option value="informacoes-gerais">ℹ️ Informações gerais</option>
+                <option value="reclamacao">⚠️ Reclamação</option>
+                <option value="sugestao">💡 Sugestão</option>
+                <option value="elogio">🌟 Elogio</option>
+                <option value="pedido-especial">🎂 Pedido especial</option>
+                <option value="outros">❓ Outros</option>
+                <!-- OBS: o value deve ser algo curto, simples e sem acentos/espaços (pra facilitar o backend e evitar problemas com caracteres especiais) -->
+            </select><br>
+            <!-- Campo de mensagem: textarea para textos longos (diferente do input de uma linha) -->
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" id="mensagem" required minlength="10" placeholder="Digite sua mensagem aqui..."
+                rows="5">
+            </textarea><br>
+            <!-- minlenght="10" declara o minimo de letras 
+             rows="5" declara a quantidade de linhas q tera a caixa do textarea -->
+            <!-- por algum motivo nao posso colocar a tag de fechamento na mesma linha dos itens do textarea. Caso faça isso o placeholder some -->
+            <!-- comentar dentro do textarea tbm da erro, fazendo o comentario aparecer dentro do corpo da mensagem -->
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+
+</html>
