@@ -1,0 +1,98 @@
+:root {
+  /* ======================== CORES e FONTES ======================== */
+  --cor-primaria: #d9a441;
+  --cor-secundaria: #f3e7cf;
+  --cor-escura: #5a3e2b;
+  --cor-clara: #fffaf2;
+  --cor-texto: #2f2f2f;
+  --cor-link: #7a4a2e;
+  --cor-destaque: #c07b2c;
+  --fonte-base: "Poppins", Arial, sans-serif;
+  --fonte-titulo: "Playfair Display", serif;
+  --fonte-apoio: "Roboto", sans-serif;
+  --fonte-marca: "Lobster Two", sans-serif;
+}
+
+/* ======================== RESET CSS ======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======================== ESTILO GLOBAL ======================== */
+body {
+  background-color: var(--cor-clara);
+  color: var(--cor-texto);
+  font-family: var(--fonte-base);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ======================== HEADER ======================== */
+/* SLOGAN, LOGO E MENU JUNTOS  */
+.marca-e-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* 1rem = 16px */
+  padding: 1rem 2rem;
+  background-color: rgba(22, 10, 1, 0.932);
+  /* Permite que os itens quebrem linha quando faltar espaço */
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.marca h1 {
+  font-family: var(--fonte-marca);
+  font-size: 3.5rem;
+  color: #f7a132b9;
+  /* Define a altura da linha do texto (espaçamento vertical entre linhas) */
+  line-height: 0.9;
+}
+
+.marca p {
+  color: #f1deba;
+  font-size: 1.1rem;
+  margin: 0.3rem 0 0;
+}
+
+.logo img {
+  height: 150px;
+  /* Faz a imagem caber inteira no container, sem cortar, mantendo proporção */
+  object-fit: contain;
+}
+
+.menu ul {
+  list-style: none;
+  text-align: right;       
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.menu a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: var(--cor-destaque);
+}
+
+.feedFaleConosco {
+  width: 80%;
+  max-width: 800px;
+  min-width: 340px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+}
+
+textarea {
+  width: 600px;
+}

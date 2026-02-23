@@ -6,37 +6,38 @@
     <meta charset="UTF-8">
     <!-- Garante que o site se adapte bem a celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Feedback - Padaria do Bairro</title>
 </head>
 
 <body>
-
-    <!-- Cabeçalho da página com título principal e menu de navegação -->
     <header>
-        <!-- h1 é o título mais importante da página (só um por página) -->
-        <h1>Feedback - Padaria do Bairro</h1>
+        <div class="marca-e-nav">
+            <div class="marca">
+                <h1>Padaria do Bairro</h1>
+                <p><em>Seu momento de pausa no dia</em></p>
+            </div>
 
-        <!-- Navegação principal: links para outras páginas do site -->
-        <nav>
-            <a href="./index.html">Início</a>
-            <a href="./contato.html">Contato</a>
-            <a href="./pedidos.html">Pedidos</a>
-            <a href="./feedback.html">Feedback</a>
-            <a href="./cadastro.html">Cadastro</a>
-        </nav>
+            <div class="logo">
+                <img src="./image/logo-sem-cor.png" alt="Logo Padaria do Bairro">
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./pedidos.html">Pedidos</a></li>
+                    <li><a href="./feedback.html">Feedback</a></li>
+                    <li><a href="./cadastro.html">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Conteúdo principal da página -->
-    <main>
-        <!-- Formulário de feedback - action vazia envia para a mesma página (bom para testes) -->
-         <form action="" method="">
-
-            <!-- Agrupa toda a área do formulário em uma seção -->
-            <section>
-                <!-- Título da primeira parte do formulário -->
+    <main class="feedForm">
+         <form>
+            <section class="feedFaleConosco">
                 <h2>Fale conosco</h2>
-
-                <!-- Agrupa campos relacionados (identificação do usuário) -->
                 <fieldset>
                     <!-- Título do grupo (anunciado por leitores de tela) -->
                     <legend>Identificação</legend>
@@ -94,8 +95,8 @@
                         id="comentario"
                         required
                         minlength="10"
-                        rows="5"
-                        placeholder="Nos ajude a melhorar!"
+                        rows="10"       
+                        placeholder="Ajude-nos a melhorar!"
                     ></textarea><br><br>
                    
                     <!-- Checkboxes: permitem múltiplas seleções (ou nenhuma) -->

@@ -251,7 +251,20 @@ body {
   object-fit: cover;
 }
 
-/* ===================== OUTRAS SEÇÕES ===================== */
+/* =================== DIFERENCIAIS E VIDEO ==================== */
+.diferenciais ul{
+list-style: none;
+}
+
+.videoDif{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  /* border: solid 2px red; */
+  margin: 0 230px;
+}
+
 video {
   max-width: 100%;
   height: auto;
@@ -259,6 +272,11 @@ video {
   margin: 2rem auto;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================== CARDAPIO ========================== */
+.cardapio h2{
+  margin-top: 70px;
 }
 
 table {
@@ -336,3 +354,7 @@ tr:nth-child(even) {
     height: 350px;
   }
 }
+
+/* ======================================================== */
+
+/* =================== FEEDBACK ========================== */
