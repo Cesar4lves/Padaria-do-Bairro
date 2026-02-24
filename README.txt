@@ -1,31 +1,24 @@
-# 🥖 Padaria do Bairro
-
 🚧 Em construção 🚧
 
-Projeto simples em **HTML** desenvolvido para fins de estudo, simulando o site institucional de uma padaria de bairro.
+##Sobre
+Projeto desenvolvido para fins de estudo através do programa Qualifica SP em parceria com a Fundação FAT, simulando o site de uma padaria de bairro.
 
-## 🏫 Fundação FAT e Qualifica SP
+## Descrição
+O site está estruturado da seguinte forma:
 
-Projeto desenvolvido no contexto das atividades da Fundação FAT em parceria com o programa Qualifica SP.
+- **Home** — página inicial com informações básicas da padaria  
+- **Cadastro** — formulário simples de registro de clientes  
+- **Contato** — área com formulário e informações para entrar em contato  
+- **Feedback** — formulário para deixar sugestões ou opiniões  
+- **Pedidos** — página para simular/visualizar pedidos
 
-## 📌 Descrição
+**Nota pessoal:** Algumas partes estarão diferentes do que foi proposto, ja que pretendo transforma-lo num projeto pessoal.
 
-O site apresenta informações básicas sobre a padaria, como:
-- História e proposta
-- Produtos oferecidos
-- Diferenciais
-- Cardápio
-- Horário de funcionamento
-- Localização
-- Vídeo institucional
-
-Todo o conteúdo foi desenvolvido **somente em HTML**, sem uso de CSS externo ou JavaScript, conforme solicitado no exercício.
-
-## 🛠️ Tecnologias Utilizadas
-
+## Tecnologias utilizadas
 - HTML5
+- CSS3
+- JavaScript
 
-## 👤 Autor
-
-Projeto desenvolvido por Cesar Augusto Alves
+## Autor
+**Cesar Augusto Alves**  
 Ano: 2026
