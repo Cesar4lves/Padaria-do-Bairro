@@ -35,13 +35,13 @@
     </header>
 
     <main class="feedForm">
-         <form>
+        <form>
             <section class="feedFaleConosco">
                 <h2>Fale conosco</h2>
                 <fieldset>
                     <!-- Título do grupo (anunciado por leitores de tela) -->
                     <legend>Identificação</legend>
-                    
+
                     <!-- Cada label está ligada ao input pelo "for" + "id" -->
                     <label for="nome">👤 Nome Completo:</label><br>
                     <input type="text" id="nome" name="nome" required placeholder="Digite seu nome"><br>
@@ -90,19 +90,13 @@
                     <!-- minlength="10" => Mínimo 10 caracteres para evitar comentários vazios -->
                     <!-- rows="5" => Altura inicial da caixa de texto -->
                     <label for="comentario">✍️ Comentário:</label><br>
-                    <textarea 
-                        name="comentario"
-                        id="comentario"
-                        required
-                        minlength="10"
-                        rows="10"       
-                        placeholder="Ajude-nos a melhorar!"
-                    ></textarea><br><br>
-                   
+                    <textarea name="comentario" id="comentario" required minlength="10" rows="10"
+                        placeholder="Ajude-nos a melhorar!"></textarea><br><br>
+
                     <!-- Checkboxes: permitem múltiplas seleções (ou nenhuma) -->
                     <!-- name diferente de tudo para não conflitar -->
                     <!-- value="sim": padrão comum - quando marcado, envia "sim". Achei mto interessante! -->
-                     <label>
+                    <label>
                         <input type="checkbox" name="recomendaria_amigos" value="sim">
                         👍 Recomendaria a Padaria do Bairro para amigos e familiares?
                     </label><br><br>
@@ -120,6 +114,11 @@
             </section>
         </form>
     </main>
+
+    <footer>
+        <p>Padaria do Bairro © 2026</p>
+    </footer>
+
 </body>
 
 </html>
