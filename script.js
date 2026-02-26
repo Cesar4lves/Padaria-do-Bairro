@@ -88,7 +88,7 @@ function desconto(valor, percentual) {
 console.log("Com desconto:", desconto(100, 10));
 
 // 🚚 Uma função que calcule a taxa de entrega baseada na distância
-function calcularTaxaEntrega() {
+function calcularTaxaEntrega(distancia) {
   if (distancia <= 5) {
     console.log("A sua entrega é gratuita");
   } else if (distancia <= 10) {
@@ -97,13 +97,37 @@ function calcularTaxaEntrega() {
     console.log("Sua taxa de entrega é de R$: 20,00");
   }
 }
+
 calcularTaxaEntrega(20);
 
-
 // função tradicional
-function calcularPreco(preco, produto){
-    return preco * produto;
+function calcularPreco(preco, produto) {
+  return preco * produto;
 }
- 
+
 // arrow function () => {}
 const calcularPrecos = (preco, produto) => preco * produto;
+
+// Captura o input e reage a cada tecla digitada
+document.getElementById("campo-filtro").addEventListener("input", (e) => {
+  // Pega o que o usuário digitou e transforma em minúsculo
+  const valor = e.target.value.toLowerCase();
+  // Pega a <ul> onde vamos mostrar os resultados
+  const resultado = document.getElementById("resultado");
+  //informando ao html que ele vai iniciar vazio
+  resultado.innerHTML = "";
+  //filtrando no array
+  //o metodo de array filter ele recebe array.filter(()=>{})
+  listaProdutos
+    .filter((produto) => produto.nome.toLowerCase().includes(valor))
+    .forEach((produto) => {
+      // Cria um <li> novo
+      const li = document.createElement("li");
+
+      // Coloca o nome e o preço dentro do <li>
+      li.textContent = `${produto.nome} - ${produto.preco}`;
+
+      // Adiciona o <li> na <ul>
+      resultado.appendChild(li);
+    });
+});

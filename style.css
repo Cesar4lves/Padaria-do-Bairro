@@ -302,6 +302,11 @@ tr:nth-child(even) {
   background-color: rgba(243, 231, 207, 0.3);
 }
 
+.pesquisa input{
+  width: 300px;
+  margin-bottom: 40px;
+}
+
 /* ===================== RESPONSIVIDADE ===================== */
 @media (max-width: 1100px) {
   .galeria1 img {
